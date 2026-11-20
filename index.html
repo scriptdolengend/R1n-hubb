@@ -4,9 +4,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@600;700&display=swap');
 *{box-sizing:border-box}body{margin:0;background:#050505;color:#f7f7f7;font-family:Inter,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,#fff2,transparent 45%),linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}.wrap{width:min(1050px,calc(100% - 32px));margin:auto}header{height:72px;border-bottom:1px solid #ffffff20}nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font:700 20px 'Space Grotesk';letter-spacing:1px}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid white;border-radius:9px;margin-right:9px;box-shadow:0 0 18px #fff5}a{color:inherit;text-decoration:none}.nav{border:1px solid #555;border-radius:8px;padding:10px 14px;font-size:12px}.hero{text-align:center;padding:95px 0 70px}.pill{display:inline-block;border:1px solid #555;border-radius:30px;padding:8px 13px;font-size:10px;letter-spacing:2px;color:#ddd}.dot{display:inline-block;width:7px;height:7px;background:white;border-radius:50%;box-shadow:0 0 12px white;margin-right:8px}h1{font:700 clamp(52px,10vw,90px)/1 'Space Grotesk';letter-spacing:-5px;margin:25px 0 16px}h1 span{color:#999;text-shadow:0 0 25px #fff6}.lead{max-width:600px;margin:auto;color:#aaa;font-size:15px;line-height:1.8}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 48px}.btn{padding:13px 18px;border-radius:8px;font-size:12px;font-weight:800}.primary{background:white;color:#050505;box-shadow:0 0 25px #fff4}.secondary{border:1px solid #555;background:#111}.panel{max-width:730px;margin:auto;text-align:left;padding:22px;border:1px solid #444;border-radius:15px;background:linear-gradient(145deg,#161616,#0b0b0b);box-shadow:0 20px 70px #000,0 0 40px #fff1}.bar{padding-bottom:15px;border-bottom:1px solid #ffffff20;color:#888;font-size:10px;letter-spacing:2px}.panel h2{font:700 21px 'Space Grotesk';margin:22px 0 8px}.panel p,.card p{color:#aaa;font-size:13px;line-height:1.7}.status{display:inline-block;border:1px solid #555;padding:9px 11px;border-radius:8px;font-size:11px;margin-top:10px}.info{padding:65px 0}.kicker{font-size:10px;letter-spacing:2px;color:#aaa;font-weight:800}h2.title{font:700 38px 'Space Grotesk';margin:12px 0 25px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;border:1px solid #303030;border-radius:12px;background:#101010}.card h3{font:700 16px 'Space Grotesk';margin:10px 0}.symbol{font-size:22px}.card p{margin-bottom:0}footer{border-top:1px solid #ffffff20;padding:24px 0;color:#777;font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}@media(max-width:650px){.cards{grid-template-columns:1fr}.hero{padding-top:70px}h1{letter-spacing:-3px}}
 </style></head><body>
-<header><nav class="wrap"><div class="brand"><span class="mark">L</span>LOWYX HUB</div><a class="nav" href="#sobre">SOBRE O PROJETO</a></nav></header>
+<header><nav class="wrap"><div class="brand"><span class="mark">L</span>LOWYX HUB</div><div style="display:flex;gap:16px;align-items:center"><a class="nav" href="#script">SCRIPT</a><a class="nav" href="#sobre">SOBRE</a></div></nav></header>
 <main><section class="hero wrap"><div class="pill"><span class="dot"></span>LOWYX HUB · OFFICIAL PROJECT</div><h1>LOWYX <span>HUB</span></h1><p class="lead">Uma central moderna com identidade própria, visual monocromático e detalhes neon. Feita para apresentar o projeto e suas novidades.</p><div class="actions"><a class="btn primary" href="#sobre">EXPLORAR PROJETO ↘</a><a class="btn secondary" href="#status">VER STATUS</a></div>
 <div class="panel" id="status"><div class="bar">● &nbsp; ● &nbsp; ● <span style="float:right">LOWYX HUB / PROJECT PANEL</span></div><h2>Central do projeto</h2><p>Bem-vindo ao LOWYX HUB. Esta página reúne informações e atualizações autorizadas do projeto. Novidades podem ser adicionadas aqui.</p><div class="status"><span class="dot"></span>Página online · Informações em atualização</div></div></section>
-<section class="info wrap" id="sobre"><div class="kicker">SOBRE</div><h2 class="title">Uma nova identidade.</h2><div class="cards"><article class="card"><div class="symbol">◈</div><h3>Design premium</h3><p>Estética preta e branca com brilho neon discreto.</p></article><article class="card"><div class="symbol">▣</div><h3>Responsivo</h3><p>Interface adaptada para celular, tablet e computador.</p></article><article class="card"><div class="symbol">⌁</div><h3>Atualizações</h3><p>Espaço preparado para novidades e informações do projeto.</p></article></div></section></main>
-<footer><div class="wrap foot"><span>© 2026 LOWYX HUB</span><span>BLACK · WHITE · NEON</span></div></footer></body></html>
 
+<section class="info wrap" id="script">
+  <div class="kicker">SCRIPT LOADER</div>
+  <h2 class="title">Acesso ao script.</h2>
+  <div class="panel">
+    <div class="bar">LOWYX HUB / LUA LOADER</div>
+    <pre id="loaderCode" style="white-space:pre-wrap;overflow-wrap:anywhere;background:#080808;border:1px solid #333;border-radius:9px;padding:16px;color:#eee;font:12px/1.7 ui-monospace,monospace;margin-top:18px">loadstring(game:HttpGet("https://raw.githubusercontent.com/r1nhubdev/R1n/refs/heads/main/src/loader/main.lua"))()</pre>
+    <button id="copyLoader" class="btn primary" style="border:0;cursor:pointer;margin-top:14px">COPIAR SCRIPT</button>
+    <p style="font-size:11px;color:#888;margin-top:12px">O código é exibido como texto para cópia; a página não executa scripts Roblox.</p>
+  </div>
+</section>
+
+<section class="info wrap" id="sobre"><div class="kicker">SOBRE</div><h2 class="title">Uma nova identidade.</h2><div class="cards"><article class="card"><div class="symbol">◈</div><h3>Design premium</h3><p>Estética preta e branca com brilho neon discreto.</p></article><article class="card"><div class="symbol">▣</div><h3>Responsivo</h3><p>Interface adaptada para celular, tablet e computador.</p></article><article class="card"><div class="symbol">⌁</div><h3>Atualizações</h3><p>Espaço preparado para novidades e informações do projeto.</p></article></div></section></main>
+<footer><div class="wrap foot"><span>© 2026 LOWYX HUB</span><span>BLACK · WHITE · NEON</span></div></footer>
+<script>
+document.getElementById('copyLoader').addEventListener('click', async function () {
+  const code = document.getElementById('loaderCode').textContent;
+  try {
+    await navigator.clipboard.writeText(code);
+    this.textContent = 'COPIADO ✓';
+  } catch (e) {
+    const area = document.createElement('textarea');
+    area.value = code; document.body.appendChild(area); area.select();
+    document.execCommand('copy'); area.remove(); this.textContent = 'COPIADO ✓';
+  }
+  setTimeout(() => this.textContent = 'COPIAR SCRIPT', 1800);
+});
+</script></body></html><!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050505"><title>LOWYX HUB</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@600;700&display=swap');
+*{box-sizing:border-box}body{margin:0;background:#050505;color:#f7f7f7;font-family:Inter,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,#fff2,transparent 45%),linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}.wrap{width:min(1050px,calc(100% - 32px));margin:auto}header{height:72px;border-bottom:1px solid #ffffff20}nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font:700 20px 'Space Grotesk';letter-spacing:1px}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid white;border-radius:9px;margin-right:9px;box-shadow:0 0 18px #fff5}a{color:inherit;text-decoration:none}.nav{border:1px solid #555;border-radius:8px;padding:10px 14px;font-size:12px}.hero{text-align:center;padding:95px 0 70px}.pill{display:inline-block;border:1px solid #555;border-radius:30px;padding:8px 13px;font-size:10px;letter-spacing:2px;color:#ddd}.dot{display:inline-block;width:7px;height:7px;background:white;border-radius:50%;box-shadow:0 0 12px white;margin-right:8px}h1{font:700 clamp(52px,10vw,90px)/1 'Space Grotesk';letter-spacing:-5px;margin:25px 0 16px}h1 span{color:#999;text-shadow:0 0 25px #fff6}.lead{max-width:600px;margin:auto;color:#aaa;font-size:15px;line-height:1.8}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 48px}.btn{padding:13px 18px;border-radius:8px;font-size:12px;font-weight:800}.primary{background:white;color:#050505;box-shadow:0 0 25px #fff4}.secondary{border:1px solid #555;background:#111}.panel{max-width:730px;margin:auto;text-align:left;padding:22px;border:1px solid #444;border-radius:15px;background:linear-gradient(145deg,#161616,#0b0b0b);box-shadow:0 20px 70px #000,0 0 40px #fff1}.bar{padding-bottom:15px;border-bottom:1px solid #ffffff20;color:#888;font-size:10px;letter-spacing:2px}.panel h2{font:700 21px 'Space Grotesk';margin:22px 0 8px}.panel p,.card p{color:#aaa;font-size:13px;line-height:1.7}.status{display:inline-block;border:1px solid #555;padding:9px 11px;border-radius:8px;font-size:11px;margin-top:10px}.info{padding:65px 0}.kicker{font-size:10px;letter-spacing:2px;color:#aaa;font-weight:800}h2.title{font:700 38px 'Space Grotesk';margin:12px 0 25px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;border:1px solid #303030;border-radius:12px;background:#101010}.card h3{font:700 16px 'Space Grotesk';margin:10px 0}.symbol{font-size:22px}.card p{margin-bottom:0}footer{border-top:1px solid #ffffff20;padding:24px 0;color:#777;font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}@media(max-width:650px){.cards{grid-template-columns:1fr}.hero{padding-top:70px}h1{letter-spacing:-3px}}
+</style></head><body>
+<header><nav class="wrap"><div class="brand"><span class="mark">L</span>LOWYX HUB</div><div style="display:flex;gap:16px;align-items:center"><a class="nav" href="#script">SCRIPT</a><a class="nav" href="#sobre">SOBRE</a></div></nav></header>
+<main><section class="hero wrap"><div class="pill"><span class="dot"></span>LOWYX HUB · OFFICIAL PROJECT</div><h1>LOWYX <span>HUB</span></h1><p class="lead">Uma central moderna com identidade própria, visual monocromático e detalhes neon. Feita para apresentar o projeto e suas novidades.</p><div class="actions"><a class="btn primary" href="#sobre">EXPLORAR PROJETO ↘</a><a class="btn secondary" href="#status">VER STATUS</a></div>
+<div class="panel" id="status"><div class="bar">● &nbsp; ● &nbsp; ● <span style="float:right">LOWYX HUB / PROJECT PANEL</span></div><h2>Central do projeto</h2><p>Bem-vindo ao LOWYX HUB. Esta página reúne informações e atualizações autorizadas do projeto. Novidades podem ser adicionadas aqui.</p><div class="status"><span class="dot"></span>Página online · Informações em atualização</div></div></section>
+
+<section class="info wrap" id="script">
+  <div class="kicker">SCRIPT LOADER</div>
+  <h2 class="title">Acesso ao script.</h2>
+  <div class="panel">
+    <div class="bar">LOWYX HUB / LUA LOADER</div>
+    <pre id="loaderCode" style="white-space:pre-wrap;overflow-wrap:anywhere;background:#080808;border:1px solid #333;border-radius:9px;padding:16px;color:#eee;font:12px/1.7 ui-monospace,monospace;margin-top:18px">loadstring(game:HttpGet("https://raw.githubusercontent.com/r1nhubdev/R1n/refs/heads/main/src/loader/main.lua"))()</pre>
+    <button id="copyLoader" class="btn primary" style="border:0;cursor:pointer;margin-top:14px">COPIAR SCRIPT</button>
+    <p style="font-size:11px;color:#888;margin-top:12px">O código é exibido como texto para cópia; a página não executa scripts Roblox.</p>
+  </div>
+</section>
+
+<section class="info wrap" id="sobre"><div class="kicker">SOBRE</div><h2 class="title">Uma nova identidade.</h2><div class="cards"><article class="card"><div class="symbol">◈</div><h3>Design premium</h3><p>Estética preta e branca com brilho neon discreto.</p></article><article class="card"><div class="symbol">▣</div><h3>Responsivo</h3><p>Interface adaptada para celular, tablet e computador.</p></article><article class="card"><div class="symbol">⌁</div><h3>Atualizações</h3><p>Espaço preparado para novidades e informações do projeto.</p></article></div></section></main>
+<footer><div class="wrap foot"><span>© 2026 LOWYX HUB</span><span>BLACK · WHITE · NEON</span></div></footer>
+<script>
+document.getElementById('copyLoader').addEventListener('click', async function () {
+  const code = document.getElementById('loaderCode').textContent;
+  try {
+    await navigator.clipboard.writeText(code);
+    this.textContent = 'COPIADO ✓';
+  } catch (e) {
+    const area = document.createElement('textarea');
+    area.value = code; document.body.appendChild(area); area.select();
+    document.execCommand('copy'); area.remove(); this.textContent = 'COPIADO ✓';
+  }
+  setTimeout(() => this.textContent = 'COPIAR SCRIPT', 1800);
+});
+</script></body></html><!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050505"><title>LOWYX HUB</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@600;700&display=swap');
+*{box-sizing:border-box}body{margin:0;background:#050505;color:#f7f7f7;font-family:Inter,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,#fff2,transparent 45%),linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}.wrap{width:min(1050px,calc(100% - 32px));margin:auto}header{height:72px;border-bottom:1px solid #ffffff20}nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font:700 20px 'Space Grotesk';letter-spacing:1px}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid white;border-radius:9px;margin-right:9px;box-shadow:0 0 18px #fff5}a{color:inherit;text-decoration:none}.nav{border:1px solid #555;border-radius:8px;padding:10px 14px;font-size:12px}.hero{text-align:center;padding:95px 0 70px}.pill{display:inline-block;border:1px solid #555;border-radius:30px;padding:8px 13px;font-size:10px;letter-spacing:2px;color:#ddd}.dot{display:inline-block;width:7px;height:7px;background:white;border-radius:50%;box-shadow:0 0 12px white;margin-right:8px}h1{font:700 clamp(52px,10vw,90px)/1 'Space Grotesk';letter-spacing:-5px;margin:25px 0 16px}h1 span{color:#999;text-shadow:0 0 25px #fff6}.lead{max-width:600px;margin:auto;color:#aaa;font-size:15px;line-height:1.8}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 48px}.btn{padding:13px 18px;border-radius:8px;font-size:12px;font-weight:800}.primary{background:white;color:#050505;box-shadow:0 0 25px #fff4}.secondary{border:1px solid #555;background:#111}.panel{max-width:730px;margin:auto;text-align:left;padding:22px;border:1px solid #444;border-radius:15px;background:linear-gradient(145deg,#161616,#0b0b0b);box-shadow:0 20px 70px #000,0 0 40px #fff1}.bar{padding-bottom:15px;border-bottom:1px solid #ffffff20;color:#888;font-size:10px;letter-spacing:2px}.panel h2{font:700 21px 'Space Grotesk';margin:22px 0 8px}.panel p,.card p{color:#aaa;font-size:13px;line-height:1.7}.status{display:inline-block;border:1px solid #555;padding:9px 11px;border-radius:8px;font-size:11px;margin-top:10px}.info{padding:65px 0}.kicker{font-size:10px;letter-spacing:2px;color:#aaa;font-weight:800}h2.title{font:700 38px 'Space Grotesk';margin:12px 0 25px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;border:1px solid #303030;border-radius:12px;background:#101010}.card h3{font:700 16px 'Space Grotesk';margin:10px 0}.symbol{font-size:22px}.card p{margin-bottom:0}footer{border-top:1px solid #ffffff20;padding:24px 0;color:#777;font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}@media(max-width:650px){.cards{grid-template-columns:1fr}.hero{padding-top:70px}h1{letter-spacing:-3px}}
+</style></head><body>
+<header><nav class="wrap"><div class="brand"><span class="mark">L</span>LOWYX HUB</div><div style="display:flex;gap:16px;align-items:center"><a class="nav" href="#script">SCRIPT</a><a class="nav" href="#sobre">SOBRE</a></div></nav></header>
+<main><section class="hero wrap"><div class="pill"><span class="dot"></span>LOWYX HUB · OFFICIAL PROJECT</div><h1>LOWYX <span>HUB</span></h1><p class="lead">Uma central moderna com identidade própria, visual monocromático e detalhes neon. Feita para apresentar o projeto e suas novidades.</p><div class="actions"><a class="btn primary" href="#sobre">EXPLORAR PROJETO ↘</a><a class="btn secondary" href="#status">VER STATUS</a></div>
+<div class="panel" id="status"><div class="bar">● &nbsp; ● &nbsp; ● <span style="float:right">LOWYX HUB / PROJECT PANEL</span></div><h2>Central do projeto</h2><p>Bem-vindo ao LOWYX HUB. Esta página reúne informações e atualizações autorizadas do projeto. Novidades podem ser adicionadas aqui.</p><div class="status"><span class="dot"></span>Página online · Informações em atualização</div></div></section>
+
+<section class="info wrap" id="script">
+  <div class="kicker">SCRIPT LOADER</div>
+  <h2 class="title">Acesso ao script.</h2>
+  <div class="panel">
+    <div class="bar">LOWYX HUB / LUA LOADER</div>
+    <pre id="loaderCode" style="white-space:pre-wrap;overflow-wrap:anywhere;background:#080808;border:1px solid #333;border-radius:9px;padding:16px;color:#eee;font:12px/1.7 ui-monospace,monospace;margin-top:18px">loadstring(game:HttpGet("https://raw.githubusercontent.com/r1nhubdev/R1n/refs/heads/main/src/loader/main.lua"))()</pre>
+    <button id="copyLoader" class="btn primary" style="border:0;cursor:pointer;margin-top:14px">COPIAR SCRIPT</button>
+    <p style="font-size:11px;color:#888;margin-top:12px">O código é exibido como texto para cópia; a página não executa scripts Roblox.</p>
+  </div>
+</section>
+
+<section class="info wrap" id="sobre"><div class="kicker">SOBRE</div><h2 class="title">Uma nova identidade.</h2><div class="cards"><article class="card"><div class="symbol">◈</div><h3>Design premium</h3><p>Estética preta e branca com brilho neon discreto.</p></article><article class="card"><div class="symbol">▣</div><h3>Responsivo</h3><p>Interface adaptada para celular, tablet e computador.</p></article><article class="card"><div class="symbol">⌁</div><h3>Atualizações</h3><p>Espaço preparado para novidades e informações do projeto.</p></article></div></section></main>
+<footer><div class="wrap foot"><span>© 2026 LOWYX HUB</span><span>BLACK · WHITE · NEON</span></div></footer>
+<script>
+document.getElementById('copyLoader').addEventListener('click', async function () {
+  const code = document.getElementById('loaderCode').textContent;
+  try {
+    await navigator.clipboard.writeText(code);
+    this.textContent = 'COPIADO ✓';
+  } catch (e) {
+    const area = document.createElement('textarea');
+    area.value = code; document.body.appendChild(area); area.select();
+    document.execCommand('copy'); area.remove(); this.textContent = 'COPIADO ✓';
+  }
+  setTimeout(() => this.textContent = 'COPIAR SCRIPT', 1800);
+});
+</script></body></html>
