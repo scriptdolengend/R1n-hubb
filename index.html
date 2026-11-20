@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080912">
+  <title>R1N HUB — Script Center</title>
+  <meta name="description" content="R1N HUB — central oficial de scripts, novidades e informações.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+    :root{--bg:#050505;--panel:#101010;--line:rgba(255,255,255,.22);--purple:#ffffff;--cyan:#f5f5f5;--muted:#a0a0a0;--white:#ffffff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 10%,rgba(255,255,255,.12),transparent 38%),radial-gradient(ellipse at 85% 30%,rgba(255,255,255,.08),transparent 35%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,auto,48px 48px,48px 48px;z-index:-1}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{height:82px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(16px);position:sticky;top:0;background:rgba(8,9,18,.78);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{display:flex;align-items:center;gap:12px;font:700 21px 'Space Grotesk';letter-spacing:1px}
+    .logo{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#ffffff,#8c8c8c);color:#090a14;font-weight:900;box-shadow:0 0 24px #ffffff80}
+    .brand span:last-child{color:#ffffff}.links{display:flex;gap:30px;color:#b8bad0;font-size:13px;font-weight:600}.links a:hover{color:white}
+    .nav-btn,.primary{border:0;color:#080912;font-weight:800;background:linear-gradient(100deg,#ffffff,#bdbdbd);padding:12px 18px;border-radius:10px;cursor:pointer;transition:.2s;box-shadow:0 0 22px #ffffff45,0 8px 28px #00000080}.nav-btn:hover,.primary:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .hero{padding:100px 0 86px;text-align:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:#171717;padding:8px 13px;border-radius:99px;color:#f0f0f0;font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}
+    .dot{width:7px;height:7px;background:#ffffff;border-radius:50%;box-shadow:0 0 13px #ffffff}
+    h1{font:700 clamp(48px,8vw,88px)/.98 'Space Grotesk';letter-spacing:-5px;margin:26px 0 20px}h1 em{font-style:normal;background:linear-gradient(100deg,#ffffff 10%,#a7a7a7 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:620px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.8}.hero-actions{display:flex;justify-content:center;gap:13px;margin-top:32px;flex-wrap:wrap}
+    .secondary{padding:12px 18px;border:1px solid #34364c;border-radius:10px;color:#e5e4f5;font-weight:700;font-size:13px;background:#111321;cursor:pointer}.secondary:hover{border-color:#ffffff;box-shadow:0 0 12px #ffffff35}
+    .preview{margin:62px auto 0;max-width:760px;border:1px solid rgba(255,255,255,.32);border-radius:17px;background:linear-gradient(145deg,#15182a,#0c0e19);padding:17px;text-align:left;box-shadow:0 25px 90px #0009,0 0 55px #ffffff18}
+    .windowbar{display:flex;align-items:center;gap:7px;padding:2px 3px 16px;border-bottom:1px solid #ffffff10}.ball{width:8px;height:8px;border-radius:50%;background:#ff6d83}.ball:nth-child(2){background:#ffc56b}.ball:nth-child(3){background:#65e5b0}.windowtitle{margin-left:auto;color:#777d99;font-size:10px;letter-spacing:1.4px}
+    .codehead{display:flex;justify-content:space-between;align-items:center;margin:18px 2px 12px;color:#a9aec7;font-size:11px;font-weight:700;letter-spacing:1.2px}.tag{color:#ffffff;background:#252525;padding:5px 8px;border-radius:6px;font-size:10px}
+    pre{white-space:pre-wrap;word-break:break-word;margin:0;padding:17px;background:#080a13;border:1px solid #ffffff0d;border-radius:10px;color:#f1f1f1;font:12px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace}
+    .copyrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px}.hint{color:#777e99;font-size:11px}.copy{background:#ffffff;color:#050505;border:0;border-radius:8px;padding:10px 15px;font-weight:800;cursor:pointer}.copy:hover{background:#d9d9d9}
+    section{padding:74px 0}.section-label{color:#ffffff;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section-title{font:700 clamp(30px,4vw,44px) 'Space Grotesk';letter-spacing:-1.5px;margin:13px 0}.section-sub{color:var(--muted);line-height:1.7;max-width:560px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.card{background:linear-gradient(145deg,#141729,#0d0f1a);border:1px solid var(--line);border-radius:15px;padding:24px;min-height:180px}.card-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:11px;background:#292929;color:#ffffff;font-size:18px;margin-bottom:19px}.card h3{font:700 17px 'Space Grotesk';margin:0 0 9px}.card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+    .notice{margin-top:28px;border:1px solid #555;background:#151515;border-radius:13px;padding:17px 19px;color:#d4d4d4;font-size:12px;line-height:1.7}.notice strong{color:#fff}
+    footer{border-top:1px solid #ffffff10;padding:27px 0;color:#777d96;font-size:11px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:700px){.links{display:none}.hero{padding:76px 0 55px}h1{letter-spacing:-3px}.cards{grid-template-columns:1fr}.preview{margin-top:42px}.copyrow{align-items:flex-start;flex-direction:column}.wrap{width:min(100% - 28px,1120px)}section{padding:55px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#"><span class="logo">R</span><span>R1N <span>HUB</span></span></a>
+  <div class="links"><a href="#inicio">Início</a><a href="#script">Script</a><a href="#sobre">Sobre</a></div>
+  <a class="nav-btn" href="#script">Acessar script ↗</a>
+</nav></div></header>
+<main>
+  <section class="hero wrap" id="inicio">
+    <div class="eyebrow"><span class="dot"></span> R1N HUB • SCRIPT CENTER</div>
+    <h1>LEVEL UP<br><em>YOUR GAME.</em></h1>
+    <p class="lead">Bem-vindo ao R1N HUB. Uma central moderna, direta e organizada para acessar as informações do projeto e copiar o código disponibilizado.</p>
+    <div class="hero-actions"><a class="primary" href="#script">PEGAR SCRIPT ↗</a><a class="secondary" href="#sobre">Conhecer o projeto</a></div>
+    <div class="preview" id="script">
+      <div class="windowbar"><span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="windowtitle">R1N HUB / LOADER</span></div>
+      <div class="codehead"><span>LOADSTRING • LUA</span><span class="tag">MAIN LOADER</span></div>
+      <pre id="scriptCode">loadstring(game:HttpGet("https://raw.githubusercontent.com/r1nhubdev/R1n/refs/heads/main/src/loader/main.lua"))()</pre>
+      <div class="copyrow"><span class="hint">Copie o código para a área de transferência.</span><button class="copy" id="copyBtn">COPIAR SCRIPT</button></div>
+    </div>
+  </section>
+  <section class="wrap" id="sobre">
+    <div class="section-label">SOBRE O PROJETO</div>
+    <h2 class="section-title">Feito para ser simples.</h2>
+    <p class="section-sub">O R1N HUB reúne o acesso ao loader em uma página rápida, adaptada para computador e celular, com visual escuro e identidade própria.</p>
+    <div class="cards">
+      <article class="card"><div class="card-icon">⌘</div><h3>Acesso rápido</h3><p>O código principal fica em destaque e pode ser copiado com apenas um toque.</p></article>
+      <article class="card"><div class="card-icon">◈</div><h3>Visual premium</h3><p>Interface moderna com efeitos suaves, contraste e identidade visual R1N.</p></article>
+      <article class="card"><div class="card-icon">▣</div><h3>Mobile friendly</h3><p>Layout responsivo para abrir e navegar tranquilamente pelo celular.</p></article>
+    </div>
+    <div class="notice"><strong>Importante:</strong> use apenas scripts de fontes em que você confia. O código remoto pode mudar a qualquer momento; revise o conteúdo e entenda o que ele faz antes de executá-lo. Este site apenas exibe e copia o texto do loader.</div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 R1N HUB. Todos os direitos reservados.</span><span>BUILT FOR THE COMMUNITY · R1N</span></div></footer>
+<script>
+  const btn=document.getElementById('copyBtn');
+  btn.addEventListener('click',async()=>{
+    const code=document.getElementById('scriptCode').textContent;
+    try{await navigator.clipboard.writeText(code);btn.textContent='COPIADO ✓';}
+    catch(e){const area=document.createElement('textarea');area.value=code;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();btn.textContent='COPIADO ✓';}
+    setTimeout(()=>btn.textContent='COPIAR SCRIPT',1800);
+  });
+</script>
+</body>
+          </html>
+          
